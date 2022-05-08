@@ -55,7 +55,7 @@ cat ../ca/cert.pem >> fullchain.pem
 ```
 7. Verify the newly created Certificate
 ```bash
-openssl verify -CAfile ../ca/ca.pem -verbose cert.pem
+openssl verify -CAfile ../ca/cert.pem -verbose cert.pem
 ```
 
 ## Install/remove CAs on your computer/phone
