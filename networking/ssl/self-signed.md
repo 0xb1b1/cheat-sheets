@@ -28,7 +28,7 @@ openssl genrsa -out key.pem 4096
 3. Generate a Certificate Signing Request (CSR)
 ```bash
 # Change yourcn to the YOUR NAME field of CA
-openssl req -new -sha256 -subj "/CN=yourcn" -key cert-key.pem -out cert.csr
+openssl req -new -sha256 -subj "/CN=yourcn" -key key.pem -out cert.csr
 ```
 4. Create `extfile.cnf` with all alternative domains/IPs
 ```bash
