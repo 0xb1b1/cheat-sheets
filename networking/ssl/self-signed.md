@@ -23,7 +23,7 @@ mkdir cert && cd $_
 ```
 2. Create Certificate's RSA key
 ```bash
-openssl genrsa -out cert-key.pem 4096
+openssl genrsa -out key.pem 4096
 ```
 3. Generate a Certificate Signing Request (CSR)
 ```bash
