@@ -1,4 +1,4 @@
-# Self-signed SSL certificates cheat-sheet
+# Self-signed SSL certificates cheat sheet
 
 ## Generate new Certificate Authority (CA)
 1. Create new folder for CA files
@@ -15,7 +15,7 @@ openssl genrsa -aes256 -out key.pem
 openssl req -new -x509 -sha256 -days 10950 -key ckey.pem -out cert.pem
 ```
 
-## Generate new certificate
+## Generate new Certificate
 1. Create new folder for Certificate files
 ```bash
 cd ..
