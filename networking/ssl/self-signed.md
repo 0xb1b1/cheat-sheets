@@ -12,7 +12,7 @@ openssl genrsa -aes256 -out key.pem
 3. Generate CA's Public Certificate
 ```bash
 # Change 10950 (30 years) to set desired expiration date 
-openssl req -new -x509 -sha256 -days 10950 -key ckey.pem -out cert.pem
+openssl req -new -x509 -sha256 -days 10950 -key key.pem -out cert.pem
 ```
 
 ## Generate new Certificate
