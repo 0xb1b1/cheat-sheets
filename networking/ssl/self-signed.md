@@ -18,7 +18,8 @@ openssl req -new -x509 -sha256 -days 10950 -key ckey.pem -out cert.pem
 ## Generate new certificate
 1. Create new folder for Certificate files
 ```bash
-cd .. && mkdir cert && cd $_
+cd ..
+mkdir cert && cd $_
 ```
 2. Create Certificate's RSA key
 ```bash
