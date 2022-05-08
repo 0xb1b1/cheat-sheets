@@ -58,13 +58,22 @@ cat ../ca/cert.pem >> fullchain.pem
 openssl verify -CAfile ../ca/ca.pem -verbose cert.pem
 ```
 
-## Install CA on your PC or server
+## Install/remove CAs on your computer/phone
 
 ### Arch Linux or Artix Linux
+**Install CA**
 ```bash
 # If you are using sudo, change doas -> sudo
 cd ..
 doas trust anchor --store ca/cert.pem
+doas update-ca-trust
+```
+**Remove CA**
+```bash
+# If you are using sudo, change doas -> sudo
+# Find your certificate in trust-source
+doas ls /etc/ca-certificates/trust-source
+doas rm /etc/ca-certificates/trust-source/<FILENAME>
 doas update-ca-trust
 ```
 
